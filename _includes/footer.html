@@ -1,0 +1,26 @@
+<div class="footer">
+  <span class="block">&copy; 2015 - {{ site.time | date: '%Y' }} {{ site.author_name }}</span>
+</div>
+
+<script>
+	// Boilerplate JS goes here
+
+// External Links = New Tab
+function addTargetBlank() {
+	var internal = location.host.replace("www.", "");
+    internal = new RegExp(internal, "i");
+      
+	var a = document.getElementsByTagName('a');
+	for (var i = 0; i < a.length; i++) {
+		var href = a[i].host; 
+		if( !internal.test(href) ) {
+			// https://dev.to/ben/the-targetblank-vulnerability-by-example
+			// https://sites.google.com/site/bughunteruniversity/nonvuln/phishing-with-window-opener			
+			a[i].setAttribute('rel', 'noopener noreferrer'); 
+			a[i].setAttribute('target', '_blank'); 
+		}
+	}
+};
+
+addTargetBlank();
+</script>

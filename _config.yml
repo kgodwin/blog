@@ -1,0 +1,51 @@
+# Site Info
+title:              "kg's blog"
+description:        "minimalist blog"
+google_verify:       # Put your Google Verification here
+google_analytics:    # Put your Google Analytics code
+
+# Author Info
+author_name:        "kg" # Your name here
+author_email:       kgodwin@kengodwin.com # Your email here
+twitter_username:    # Your Twitter username here
+github_username:    kgodwin # Your GitHub username here
+
+# Site Settings
+url:                http://www.kengodwin.com # main url
+baseurl:             # for gh-pages
+permalink:          /posts/:title.html # Post permalink
+timezone:           America/Los_Angeles # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+mathjax:            true  # enables support for mathjax - set to false to disable
+
+# Site Build
+highlighter:        rouge
+markdown:           kramdown
+kramdown:
+    input:          GFM
+sass:
+    style:          :compressed
+
+# Other Params
+include:            [ "robots.txt" ]
+exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
+gems:
+  - jekyll-sitemap
+
+
+
+defaults:
+  -
+    scope:
+      path:         ""
+    values:
+      layout:       "null"
+  -
+    scope:
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      type:         "posts"
+    values:
+      layout:       "post"
