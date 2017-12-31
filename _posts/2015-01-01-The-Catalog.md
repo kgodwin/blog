@@ -110,11 +110,17 @@ password=?
 **LAN**
 * <https://pi-hole.net/>
 
-**NS**
+**Authoritative**
 * <https://github.com/abh/geodns>
+* <https://github.com/powerdns>
 
+## Lists
 
-## External
+[Full Stack Python](https://www.fullstackpython.com)
+
+[PHP The Right Way](http://www.phptherightway.com/)
+
+[PHP Static Analysis](https://github.com/exakat/php-static-analysis-tools)
 
 [Awesome Selfhosted](https://github.com/Kickball/awesome-selfhosted)
 
