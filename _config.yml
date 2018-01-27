@@ -12,7 +12,7 @@ github_username:    kgodwin # Your GitHub username here
 
 # Site Settings
 url:                http://www.kengodwin.com # main url
-baseurl:             # for gh-pages
+baseurl:            # for gh-pages
 permalink:          /posts/:title.html # Post permalink
 timezone:           America/Los_Angeles # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 mathjax:            true  # enables support for mathjax - set to false to disable

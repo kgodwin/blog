@@ -1,3 +1,17 @@
+/* exceptions */
+
+input#uptime {
+  font-size: inherit !important;
+  width: 6em;
+}
+
+.force-big {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+/* end exceptions */
+
 body {
   font-size: 1.1em;
   line-height: 1.2em;
@@ -188,6 +202,9 @@ pre {
 tbody tr:nth-child(odd) {
   background-color: #FEE;
 }
+tbody td:last-child {
+  border-right: 1px solid black; 
+}
 table {
   width: 100%;
   table-layout: auto;  
@@ -201,8 +218,9 @@ table {
     border-bottom: 5px solid #F3F3F3;
   }
   td {
-    padding: 4px 0;    
-  }  
+    padding: 4px 1em 4px 1em;        
+    border-left: 1px solid black;    
+  }    
 }
 iframe {
   width: 100%;
